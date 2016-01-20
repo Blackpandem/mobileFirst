@@ -30,3 +30,35 @@ Mettre à jour sur une branche
 SASS
 
 LESS - lesscss.org
+
+Permet de créer des variables - plus rapide
+
+DRY : Don't Repeat Yourself
+
+Exemple:
+
+##AVANT
+```
+
+.titre{
+color: #f00;
+}
+.link{
+color: #f00;
+}
+
+```
+
+##APRES
+```
+
+@color-primary: #f00;
+
+.titre{
+color: @color-primary;
+}
+.link{
+color: @color-primary;
+}
+
+```
