@@ -1,4 +1,4 @@
-# mobileFirst
+# Mobile First
 
 Liste des branches
 ```git branch ```
