@@ -4,6 +4,9 @@ footer {
   width: 65%;
   margin: 0 auto;
 }
+nav {
+  text-align: center;
+}
 nav div {
   display: inline-block;
 }
@@ -18,4 +21,10 @@ nav div ul li {
 }
 main {
   color: #333333;
+}
+footer {
+  text-align: center;
+}
+footer nav ul a li {
+  display: inline;
 }
