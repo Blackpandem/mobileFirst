@@ -1,4 +1,5 @@
-@color-primary: #333;
+@color-primary: #FBFBFB;
+@color-header: #fff;
 
 .wrapper() {
     width: 65%;
@@ -8,8 +9,23 @@
     .wrapper();
 }
 
+.fullpage(){
+    width: 100%;
+    padding: 0;
+}
+.fullpage{
+    .fullpage();
+}
+
+body{
+background-color: @color-primary;
+    margin: 0;
+    padding: 0;
+}
 nav{
-text-align: center;
+    &:extend(.fullpage);
+    text-align: center;
+    background: @color-header;
 }
 nav div{
 display: inline-block;
@@ -25,11 +41,10 @@ float: right;
 }
 main {
     &:extend(.wrapper);
-    color: @color-primary;
 }
 
 footer {
-    &:extend(.wrapper);
+    &:extend(.fullpage);
     text-align: center;
 }
 footer nav ul a li{

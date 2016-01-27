@@ -1,11 +1,22 @@
 .wrapper,
-main,
-footer {
+main {
   width: 65%;
   margin: 0 auto;
 }
+.fullpage,
+nav,
+footer {
+  width: 100%;
+  padding: 0;
+}
+body {
+  background-color: #fbfbfb;
+  margin: 0;
+  padding: 0;
+}
 nav {
   text-align: center;
+  background: #ffffff;
 }
 nav div {
   display: inline-block;
@@ -18,9 +29,6 @@ nav div ul li {
 }
 .nav-right {
   float: right;
-}
-main {
-  color: #333333;
 }
 footer {
   text-align: center;
