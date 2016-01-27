@@ -1,0 +1,30 @@
+@color-primary: #333;
+
+.wrapper() {
+    width: 65%;
+    margin: 0 auto;
+}
+.wrapper {
+    .wrapper();
+}
+
+nav div{
+display: inline-block;
+}
+nav div ul li{
+display: inline;
+}
+.nav-left{
+    float: left;
+}
+.nav-right{
+float: right;
+}
+main {
+    &:extend(.wrapper);
+    color: @color-primary;
+}
+
+footer {
+    &:extend(.wrapper);
+}
