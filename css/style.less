@@ -36,9 +36,8 @@
 .button{
     background-color: cornflowerblue;
     color: #fff;
-    padding: 10px;
     display: block;
-    border-radius: 3px 3px 3px;
+    width: 100%;
 }
 
 /* margin */
@@ -51,13 +50,15 @@
     margin-bottom: 3%;
 }
 
+/* general */
 body
 {
 	font: unit((@font-normal / @font-root * 100), %)/1.5em 'Open Sans', sans-serif;
 	color: @color-text;
+    margin: 5px;
 }
 a{
- text-decoration: none;   
+     text-decoration: none;   
 }
 
 h1
@@ -77,26 +78,32 @@ p
 	margin-bottom: 1.5em;  
 }
 img{
-width: 100%;
+    width: 100%;
 }
+
+/* header + menu */
 .banner
 {
-text-align: center;
-}
-
-.main-header, .main-nav{
-    display: inline-block;
+    text-align: center;
 }
 .main-nav a{
-    display: inline-block;
+    margin-bottom: 2%;
 }
 
 
-@media-queries screen and (min-width: 2224px){
+@media screen and (min-width: 1024px){
     .banner, footer, main{
            .wrapper(12); 
     }
     img{
-        width: none;
+        width: auto;
     }
+    .main-nav a{
+    display: inline-block;
+    }
+    .button{
+    border-radius: 3px 3px 3px;
+    width: auto;
+        padding: 1%;
+}
 }
