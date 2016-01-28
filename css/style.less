@@ -1,52 +1,89 @@
+/* Reset default css */
+@import "reset.css";
+
+/* Fonts */
+@font-normal     : 23px;
+@color-text      : #1D1F20;
+
+@font-root       : 16px;
+@column-width    : unit((96px / @font-root), rem);
+@gutter-width    : unit((36px / @font-root), rem); 
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+// wrapper
+.wrapper(@cols)
+{
+	width: @column-width * @cols;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.column(@cols)
+{
+  
+}
+
+/* Colors */
 @color-primary: #FBFBFB;
 @color-header: #fff;
 
-.wrapper() {
-    width: 65%;
-    margin: 0 auto;
+/* Boutons */
+
+.button(){
+    .button;
 }
-.wrapper {
-    .wrapper();
+.button{
+    background-color: cornflowerblue;
+    color: #fff;
+    padding: 10px;
+
+    border-radius: 3px 3px 3px;
 }
 
-.fullpage(){
-    width: 100%;
-    padding: 0;
+/* margin */
+
+.margin-bloc(){
+    .margin-bloc;
 }
-.fullpage{
-    .fullpage();
+.margin-bloc{
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 
-body{
-background-color: @color-primary;
-    margin: 0;
-    padding: 0;
+body
+{
+	font: unit((@font-normal / @font-root * 100), %)/1.5em 'Open Sans', sans-serif;
+	color: @color-text;
 }
-nav{
-    &:extend(.fullpage);
-    text-align: center;
-    background: @color-header;
-}
-nav div{
-display: inline-block;
-}
-nav div ul li{
-display: inline;
-}
-.nav-left{
-    float: left;
-}
-.nav-right{
-float: right;
-}
-main {
-    &:extend(.wrapper);
+a{
+ text-decoration: none;   
 }
 
-footer {
-    &:extend(.fullpage);
-    text-align: center;
+h1
+{
+	font-size: 2em;
+	font-weight: bold;
+	line-height: 1.2em;
+	margin-bottom: 1em;
 }
-footer nav ul a li{
-    display: inline;
+h2
+{
+	&:extend(h1);
+	font-size: 1.5em;
+}
+p
+{
+	margin-bottom: 1.5em;
+    
+}
+
+.banner
+{
+  .wrapper(12);
+text-align: center;
+}
+
+.main-header, .main-nav{
+    display: inline-block;
 }
