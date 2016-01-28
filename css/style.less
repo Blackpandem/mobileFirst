@@ -37,7 +37,7 @@
     background-color: cornflowerblue;
     color: #fff;
     padding: 10px;
-
+    display: block;
     border-radius: 3px 3px 3px;
 }
 
@@ -74,16 +74,29 @@ h2
 }
 p
 {
-	margin-bottom: 1.5em;
-    
+	margin-bottom: 1.5em;  
 }
-
+img{
+width: 100%;
+}
 .banner
 {
-  .wrapper(12);
 text-align: center;
 }
 
 .main-header, .main-nav{
     display: inline-block;
+}
+.main-nav a{
+    display: inline-block;
+}
+
+
+@media-queries screen and (min-width: 2224px){
+    .banner, footer, main{
+           .wrapper(12); 
+    }
+    img{
+        width: none;
+    }
 }
