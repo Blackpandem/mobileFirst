@@ -1,32 +1,20 @@
+/*  
+    projet : MOBILE FIRST RAMMSTEIN
+    auteur : Alexandre Prevots
+    Licence ATC Classe Développeur
+*/
+
+/* Reset default css */
+@import "variables.less";
+
 /* Reset default css */
 @import "reset.css";
 
-/* Fonts */
-@font-normal     : 23px;
-@color-text      : #1D1F20;
 
-@font-root       : 16px;
-@column-width    : unit((96px / @font-root), rem);
-@gutter-width    : unit((36px / @font-root), rem); 
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
-// wrapper
-.wrapper(@cols)
-{
-	width: @column-width * @cols;
-	margin-left: auto;
-	margin-right: auto;
-}
 
-.column(@cols)
-{
-  
-}
-
-/* Colors */
-@color-primary: #FBFBFB;
-@color-header: #fff;
 
 /* Boutons */
 
@@ -34,11 +22,14 @@
     .button;
 }
 .button{
-    background-color: cornflowerblue;
+    background-color: #2D2D2D;
     color: #fff;
     display: block;
     width: 100%;
     padding: 1%;
+}
+.button:hover{
+    background-color: #7D7D7D;
 }
 
 /* margin */
@@ -92,7 +83,7 @@ img{
 }
 
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: @device-width-medium){
     .banner, footer, main{
            .wrapper(12); 
     }
@@ -100,11 +91,11 @@ img{
         width: auto;
     }
     .main-nav a{
-    display: inline-block;
+        display: inline-block;
     }
     .button{
-    border-radius: 3px 3px 3px;
-    width: auto;
+        border-radius: 3px 3px 3px;
+        width: auto;
         padding: 1%;
 }
 }

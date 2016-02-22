@@ -1,15 +1,28 @@
 @import "reset.css";
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+/*  
+    projet : MOBILE FIRST RAMMSTEIN
+    auteur : Alexandre Prevots
+    Licence ATC Classe Développeur
+*/
 /* Reset default css */
 /* Fonts */
 /* Colors */
+/* Animation */
+.anim {
+  transition: 0.3s ease-in;
+}
+/* Reset default css */
 /* Boutons */
 .button {
-  background-color: cornflowerblue;
+  background-color: #2D2D2D;
   color: #fff;
   display: block;
   width: 100%;
   padding: 1%;
+}
+.button:hover {
+  background-color: #7D7D7D;
 }
 /* margin */
 .margin-bloc {
@@ -48,7 +61,7 @@ img {
 .main-nav a {
   margin-bottom: 2%;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 64em) {
   .banner,
   footer,
   main {
