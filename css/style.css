@@ -1,5 +1,5 @@
 @import "reset.css";
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
 /*  
     projet : MOBILE FIRST RAMMSTEIN
     auteur : Alexandre Prevots
@@ -15,14 +15,14 @@
 /* Reset default css */
 /* Boutons */
 .button {
-  background-color: #2D2D2D;
+  background-color: #121212;
   color: #fff;
   display: block;
-  width: 100%;
   padding: 1%;
 }
 .button:hover {
   background-color: #7D7D7D;
+  color: #fff;
 }
 /* margin */
 .margin-bloc {
@@ -31,12 +31,16 @@
 }
 /* general */
 body {
-  font: 143.75%/1.5em 'Open Sans', sans-serif;
+  font: 143.75%/1.5em 'Roboto', sans-serif;
   color: #1d1f20;
   margin: 5px;
 }
 a {
   text-decoration: none;
+  color: #1D92CF;
+}
+a:hover {
+  color: #197EB4;
 }
 h1,
 h2 {
@@ -54,12 +58,13 @@ p {
 img {
   width: 100%;
 }
+/* font style */
+.italic {
+  font-style: italic;
+}
 /* header + menu */
 .banner {
   text-align: center;
-}
-.main-nav a {
-  margin-bottom: 2%;
 }
 /*card*/
 @media screen and (min-width: 64em) {

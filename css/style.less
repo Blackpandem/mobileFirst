@@ -12,7 +12,7 @@
 
 
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
 
 
 
@@ -22,14 +22,14 @@
     .button;
 }
 .button{
-    background-color: #2D2D2D;
+    background-color: #121212;
     color: #fff;
     display: block;
-    width: 100%;
     padding: 1%;
 }
 .button:hover{
     background-color: #7D7D7D;
+    color: #fff;
 }
 
 /* margin */
@@ -45,12 +45,16 @@
 /* general */
 body
 {
-	font: unit((@font-normal / @font-root * 100), %)/1.5em 'Open Sans', sans-serif;
+	font: unit((@font-normal / @font-root * 100), %)/1.5em 'Roboto', sans-serif;
 	color: @color-text;
     margin: 5px;
 }
 a{
-     text-decoration: none;   
+    text-decoration: none;
+    color: #1D92CF;
+}
+a:hover{
+    color: #197EB4;
 }
 
 h1
@@ -73,13 +77,22 @@ img{
     width: 100%;
 }
 
+/* font style */
+.italic(){
+    .italic;
+}
+.italic{
+    font-style: italic;
+}
+
+
 /* header + menu */
 .banner
 {
     text-align: center;
 }
 .main-nav a{
-    margin-bottom: 2%;
+   
 }
 
 /*card*/

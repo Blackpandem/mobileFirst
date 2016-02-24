@@ -1,0 +1,34 @@
+/* Fonts */
+@font-normal     : 23px;
+@color-text      : #1D1F20;
+
+@font-root       : 16px;
+@column-width    : unit((96px / @font-root), rem);
+@gutter-width    : unit((36px / @font-root), rem); 
+
+@device-width-medium : unit((1024px/@font-root), em);
+
+// wrapper
+.wrapper(@cols)
+{
+	width: @column-width * @cols;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.column(@cols)
+{
+  
+}
+
+/* Colors */
+@color-primary: #FBFBFB;
+@color-header: #fff;
+
+/* Animation */
+.anim(){
+     .anim;   
+}
+.anim{
+transition: 0.3s ease-in;
+}
