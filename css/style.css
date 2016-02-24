@@ -24,6 +24,16 @@
   background-color: #373737;
   color: #fff;
 }
+.button-link {
+  background-color: #1D92CF;
+  color: #fff;
+  display: block;
+  padding: 1%;
+}
+.button-link:hover {
+  background-color: #197EB4;
+  color: #fff;
+}
 /* margin */
 .margin-bloc {
   margin-top: 3%;
@@ -70,6 +80,14 @@ img {
   margin-bottom: 1px;
 }
 /*card*/
+/* footer */
+.main-footer {
+  background: #333;
+  color: #fff;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
 @media screen and (min-width: 64em) {
   .banner,
   footer,
